@@ -10,5 +10,10 @@ class StaticPagesControllerTest < ActionController::TestCase
     get :help
     assert_response :success
   end
+  
+  test "should ger about" do
+    get :about
+    assert_response :success
+  end
 
 end
